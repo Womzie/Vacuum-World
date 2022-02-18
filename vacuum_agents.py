@@ -41,6 +41,7 @@ def state_agent(percept):
     if percept == True:
         last_move = 'clean'
         return 'clean'
+
     else:
         if last_move != 'clean':
             temp_move = random.choice(move)
@@ -57,7 +58,7 @@ def state_agent(percept):
 
 #run(20, 50000, state_agent)
 
-#print(many_runs(20, 50000, 10, reflex_agent))
+#rint(many_runs(20, 50000, 10, reflex_agent))
 
 print(many_runs(20, 50000, 10, random_agent)) # hovers around 60,000
 
